@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"/>
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"/>
+    <link rel="stylesheet" href="css/jugadores.css">
+    <title>System Administración Casinos</title>
+</head>
+<body>
+    <section id="inicio">
+        <div class="contenido">
+            <!-- Cabecera -->
+            <header>
+                <div class="contenido-header">
+                    <h1>System Administración Casinos</h1>
+                    <nav>
+                        <a href="index.html">Inicio</a>
+                        <a href="novedades.html">Ver Novedades</a>
+                        <a href="informe.html">Ver Informe</a>
+                    </nav>
+                </div>
+            </header>
+
+            <!-- Formulario para agregar jugadores -->
+            <div class="presentacion">
+                <form id="form-agregar">
+                    <h1>Agregar jugador</h1>
+                    <input type="text" id="nombre" placeholder="Nombre" required />
+                    <button type="submit">Agregar Jugador</button>
+                </form>
+            </div>
+            
+            <!-- Formulario para agregar jugadas -->
+                <form id="form-jugador">
+                    <h1>Historial de jugador</h1>
+                    <input type="hidden" id="jugador-id" />
+                    <input type="number" min="0" id="ganancias" placeholder="Ganancias" required />
+                    <input type="number" max="0" id="perdidas" placeholder="Pérdidas" required />
+                    <input type="text" id="lugar" placeholder="Lugar donde jugó" required />
+                    <button type="submit">Actualizar Historial</button>
+                </form>
+
+            <!-- Contenedor de jugadores -->
+            <section class="all-jugadores">
+                <div>
+                    <h2>Jugadores</h2>
+                    <div id="jugadores-contenedor" class="jugadores-grid">
+                        <!-- Las tarjetas de los jugadores se cargarán aquí -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tabla para mostrar jugadas -->
+            <section class="jugadas">
+                <div class="contenedor-rta">
+                    <div class="respuesta">
+                    <h2 id="jugador-nombre">Historial de jugadas</h2>
+                    <button id="cerrar-historial">x</button>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ganancias</th>
+                                <th>Pérdidas</th>
+                                <th>Lugar</th>
+                                <th>Fecha</th>
+                            </tr>
+                        </thead>
+                        <tbody id="jugadas-lista">
+                            <!-- Las jugadas se cargarán aquí -->
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <script src="js/jugadores.js"></script>
+</body>
+</html>

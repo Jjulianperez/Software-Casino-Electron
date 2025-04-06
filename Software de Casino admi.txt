@@ -1,0 +1,16 @@
+Software de Casino admi
+
+Necesidades:
+necesita un software para administrar una base de datos que inserte, actualice y borre datos de manera dinámica,
+crear un bot que recoja datos de telegram formulario que mande su nombre y cuanto gano o perdio, con esos datos
+los guarde y los muestre, que pasen un flitro, llevar un diagnostico de los jugadores,
+cuanto ganan o pierden, donde jugan y seguimiento por semana y hacer un recuento mensual y anual;
+
+torneos;
+jugadas;
+
+
+jugadores, juegan por horas, pueden participar en torneos
+
+
+hacer archivo zip que ella pueda guardarlo en la nube
